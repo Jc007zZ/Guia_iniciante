@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: Heveltica, sans-serif;
 }
 
 
@@ -15,29 +15,222 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(10, 10, 10);
+    background-color: #222;
+    animation: top .7s;
 }
 
-main, header {
-    width:  50rem;
+header{
+    background: url('photoHtml.jpeg');
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 h1, h2, p {
-    color: white;
-    padding-block: 1rem;
+    color: #fff;
+    padding-block: 4px;
 }
 
-h1 {
-    display: flex;
-    justify-content: center; 
-    padding: 2rem;
+.introduction-container{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 175px;
+}
+.introduction-bg{
+    background: linear-gradient(#333, #222);
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
 }
 
-ul {
+.introduction-info{
+    position: absolute;
+    padding-left: 5%;
+    width: 800px;
+}
+.introduction-info h1{
+    font-size: 24px;
+}
+
+main article{
+    margin: 30px 0 0 7%;
+}
+
+main h1{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.courses .courses-title{
+    background-color: #8634eb;
+    height: 150px;
+    line-height: 150px;
+    float: left;
+    width: 15%;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.courses-links{
+   padding: 0 16%;
+}
+
+.courses-links p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul{
     list-style-position: inside;
 }
 
-li {
+.courses-links ul li{
+    font-size: 16px;
+    list-style: none;
+}
+
+.courses-links ul li a{
+    text-decoration: none;
     color: white;
+}
+
+
+.courses-links ul li a:hover{
+   color: #8634eb;
+}
+
+.recommended-contents{
+    padding: 30px 0 7%;
+}
+
+.recommended-contents h2{
+    background-color: #0d66ff;
+    height: 150px;
+    line-height: 150px;
+    float: left;
+    width: 15%;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.recommended-contents h2{
+    padding-top: 45px;
+    line-height: 24px;
+}
+
+.recommended-contents p {
+    font-weight: bold;
+}
+
+.recommended-contents p a{
+    color: #0d66ff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.recommended-contents p a:hover{
+    text-decoration: underline;
+}
+
+.recommended-contents  ul li{
+    list-style: none;
+}
+
+.recommended-contents ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.recommended-contents-info{
+    padding: 0 16%;
+}
+
+.recommended-contents  ul li a:hover{
+    color: #0d66ff;
+}
+
+.vscode h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.courses-links ul, .recommended-content-info ul{
+    margin-top: 12px;
+}
+
+.extensions{
+    padding: 30px 0 7%;
+}
+
+.extensions h2{
+    background-color: #04d6a2;
+    height: 150px;
+    line-height: 150px;
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+
+.extensions-info{
+    padding: 0 16%;
+}
+
+.extensions-info p{
+    font-weight: bold;
+}
+
+.extensions-info ul {
+    margin-top: 12px;
+    color: #fff;
+}
+
+.extensions ul li{
+    list-style: none;
+}
+
+.extensions ul li:hover{
+    color: #04d6a2;
+}
+
+section .shortcuts p a{
+    color: #ff0088;
+    text-decoration: none;
+}
+
+section article p a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    color: #ccc;
+}
+
+footer a{
+    color: #ff0088;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@keyframes top{
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
